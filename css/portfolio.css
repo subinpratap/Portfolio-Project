@@ -1,9 +1,4 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
 
 html {
   font-family: sans-serif; /* 1 */
@@ -931,22 +926,7 @@ h1,h2,h3,h4,h5,h6{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/*
-.phone-number{
-	color: #ccc;
-    width: 200%;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: quicksand;
-	position: absolute;
-    top: 29%;
-    right: -14px;
-}*/
-/*
-.fa-phone:hover .phone-number{
-	display: block !important;
-}*/
-/**/
+
 .phone-number.show{
 	display: block;
 	 opacity: 1;
@@ -963,13 +943,14 @@ h1,h2,h3,h4,h5,h6{
     font-size: 17px;
     font-weight: 600;
     font-family: quicksand;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 8px;
     right: 15px;
     height: 70px;
 	display: block;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .phone-number p{
